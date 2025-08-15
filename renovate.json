@@ -6,16 +6,9 @@
   "regexManagers": [
     {
       "fileMatch": ["Dockerfile"],
-      "matchStrings": ["ARG KIND_VERSION=(?<currentValue>.*?)\\n"],
+      "matchStrings": ["ARG VOTIFY_VERSION=(?<currentValue>.*?)\\n"],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "kubernetes-sigs/kind",
-      "extractVersionTemplate": "^v?(?<version>.*)$"
-    },
-    {
-      "fileMatch": ["Dockerfile"],
-      "matchStrings": ["ARG KUBECTL_VERSION=(?<currentValue>.*?)\\n"],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "kubernetes/kubernetes",
+      "depNameTemplate": "glomatico/votify",
       "extractVersionTemplate": "^v?(?<version>.*)$"
     }
   ]
